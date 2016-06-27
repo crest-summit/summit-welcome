@@ -13,8 +13,7 @@ node {
 
     stage 'push image'
     docker.withRegistry('https://606752838354.dkr.ecr.us-east-1.amazonaws.com', 'ecr:aws-jenkins-credentials') {
-        docker.image('summit/welcome').tag('606752838354.dkr.ecr.us-east-1.amazonaws.com/summit/welcome');
-        docker.image('606752838354.dkr.ecr.us-east-1.amazonaws.com/summit/welcome').push('latest');
+        docker.image('summit/welcome').push('latest');
     }
 
 }
