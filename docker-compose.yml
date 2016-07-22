@@ -4,3 +4,6 @@ app:
     - ./public:/usr/share/nginx/html
   ports:
     - "8080:80"
+  environment:
+    DOCS_URL: docs.summit-qa.research.vt.edu
+    APP_URL: summit-qa.research.vt.edu
