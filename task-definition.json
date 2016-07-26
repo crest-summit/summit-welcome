@@ -13,7 +13,16 @@
       "essential": true,
       "mountPoints": [],
       "name": "welcome-nginx",
-      "environment": [],
+      "environment": [
+          {
+              "name": "DOCS_URL",
+              "value": "https://docs.dev.summit.cloud.vt.edu/"
+          },
+          {
+             "name": "APP_URL",
+             "value": "https://app.dev.summit.cloud.vt.edu/"
+          }
+      ],
       "image": "IMAGE",
       "cpu": 100
     }
